@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto|Rock+Salt");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body, html {
+  height: 100%;
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.5;
+  background: #fff; }
+
+.main-title {
+  margin: 50px 0;
+  display: inline-block;
+  border-bottom: 2px solid #f0115f;
+  padding: 10px; }
+
+#navBtn {
+  cursor: pointer;
+  padding: 1em;
+  color: #fff;
+  font-size: 2em;
+  transition: .3s ease-in-out; }
+  #navBtn:hover {
+    text-shadow: 0px 0px 30px black; }
+
+#slideMenu {
+  padding-top: 50px;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 9999;
+  transform: translate3d(-100vw, 0, 0);
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  overflow: hidden; }
+
+#slideMenu.show {
+  transform: translate3d(0vw, 0, 0); }
+
+#slideMenu h2 a {
+  font-family: sans-serif;
+  font-size: 70px;
+  color: #f0115f;
+  margin-left: 15px;
+  text-decoration: none; }
+
+#slideMenu h2 a:hover {
+  text-decoration: underline; }
+
+header {
+  position: relative;
+  height: 70vh;
+  background: url("../assets/images/cafe.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  header .header-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(222, 39, 28, 0.5); }
+    header .header-overlay nav ul {
+      list-style-type: none; }
+      header .header-overlay nav ul .logo {
+        float: left;
+        font-size: 30px;
+        padding: 1em;
+        color: #eee; }
+      header .header-overlay nav ul #navBtn {
+        float: right; }
+    header .header-overlay .heading-container {
+      clear: both; }
+      header .header-overlay .heading-container h1.heading-title {
+        font-family: "Rock Salt", "Oswald", "Roboto", Arial, sans-serif;
+        font-size: 35px;
+        color: #eee; }
+      header .header-overlay .heading-container h3 {
+        color: #eee; }
+      header .header-overlay .heading-container .button-group {
+        padding-top: 10px; }
+        header .header-overlay .heading-container .button-group button {
+          outline: none; }
+          header .header-overlay .heading-container .button-group button:focus {
+            outline: none;
+            border: none; }
+
+figure {
+  filter: drop-shadow(10px 10px 10px #333); }
+
+#landing-sites .feature {
+  margin-top: 50px; }
+  #landing-sites .feature figure {
+    width: 100%;
+    position: relative; }
+    #landing-sites .feature figure:hover .figure-overlay {
+      opacity: 1; }
+    #landing-sites .feature figure img {
+      display: block;
+      height: auto;
+      width: 100%; }
+    #landing-sites .feature figure .figure-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background: rgba(92, 213, 77, 0.6); }
+  #landing-sites .feature .desc {
+    background: #eee;
+    min-height: 150px;
+    height: auto;
+    text-align: center;
+    padding-top: 5px; }
+
+.banner-2 {
+  margin: 50px 0;
+  background: url("../assets/images/bridge-blur.jpg");
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .banner-2 h1 {
+    text-align: center;
+    border: 2px solid #f0115f;
+    display: inline-block;
+    margin: 100px 0;
+    color: #f0115f; }
+
+#webapps {
+  margin: 50px 0; }
+  #webapps .feature {
+    margin-top: 50px; }
+    #webapps .feature figure {
+      width: 100%;
+      position: relative; }
+      #webapps .feature figure:hover .figure-overlay {
+        opacity: 1; }
+      #webapps .feature figure img {
+        display: block;
+        height: auto;
+        width: 100%; }
+      #webapps .feature figure .figure-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background: rgba(240, 17, 95, 0.5); }
+    #webapps .feature .desc {
+      background: #eee;
+      min-height: 150px;
+      height: auto;
+      text-align: center;
+      padding-top: 5px; }
+
+#about {
+  min-height: 350px;
+  height: auto;
+  background: #f0115f;
+  padding: 1em; }
+
+#skills .skill {
+  width: 100px;
+  height: auto; }
+#skills .language-container {
+  display: flex;
+  flex-wrap: wrap; }
+  #skills .language-container .language-box {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto; }
+    #skills .language-container .language-box .skill {
+      font-size: 70px; }
+      #skills .language-container .language-box .skill:hover {
+        color: lightgreen; }
+
+#footer {
+  text-align: center;
+  height: 350px;
+  width: 100%;
+  margin: 50px auto; }
+  #footer form {
+    margin: 0 auto; }
+    #footer form #name {
+      width: 50%; }
+    #footer form #email {
+      width: 50%; }
+    #footer form #message {
+      width: 50%; }
+    #footer form input:focus, #footer form textarea:focus {
+      outline: none; }
+  #footer #bottom-footer {
+    margin-top: 50px;
+    background: #f0115f;
+    text-align: center; }
+    #footer #bottom-footer ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 50px;
+      justify-content: center; }
+      #footer #bottom-footer ul li a {
+        display: block;
+        padding: 1em;
+        color: lightgreen;
+        font-family: 'Rock Salt', 'Roboto', Arial, sans-serif;
+        font-size: 30px; }
+
+/*# sourceMappingURL=main.css.map */
